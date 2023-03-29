@@ -1,9 +1,9 @@
-package main 
+package requirements
 
 import (
-	"os"
 	"bufio"
 	"log"
+	"os"
 )
 
 func GetStringInput() string {
@@ -12,13 +12,12 @@ func GetStringInput() string {
 	reader := bufio.NewReader(os.Stdin)
 	input, err := reader.ReadString('\n')
 
-	//Error Handling Part 
+	//Error Handling Part
 
-	if err != nil{
+	if err != nil {
 		log.Println("Oh Ohh Something Went WRONG ")
 	}
-	// Ruturning the input 
+	// Ruturning the input
 	return input
 
 }
-
